@@ -5,6 +5,9 @@
 function App() {
   return (
     <>
+      <div className="flex lg:w-1/2 lg:h-80 sm:w-screen sm:h-screen sm:grid" style={{backgroundColor: "blue"}}>
+        Hello World
+      </div>
     </>
   )
 }
