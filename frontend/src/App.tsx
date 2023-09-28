@@ -31,6 +31,7 @@ function App() {
             </div>
           <div className="sm:max-2xl:w-1/2 rounded-e-2xl shadow-2xl">
             <Memory />
+            {data.map(i => i.icon)}
           </div>
         </div>
       </div>
