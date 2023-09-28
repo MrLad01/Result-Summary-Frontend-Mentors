@@ -11,18 +11,23 @@ function App() {
   average = sum / data.length;
   var score = Math.round(average);
 
-  const results = data.map(e => (
-    <div className={`flex justify-between bg-${e.color} bg-opacity-10 p-2 my-1 rounded-md justify-center items-center`}>
+
+  const results = data.map(e => {
+    console.log(e.color); 
+    
+    return (
+      <div className= {`flex justify-between bg-${e.color} bg-opacity-10 p-2 my-1 rounded-md items-center`} key={e.category}>
      <div className="flex items-center justify-center" > 
-      <e.icon key={e.category}/>
-      <p className= {`font-semibold text-${e.color} ml-2`}>{e.category}</p>
+      <e.icon />
+      <p className={`font-semibold text-${e.color} ml-2`}>{e.category}</p>
      </div>
       <span className="flex">
         <p className="font-bold mr-2 text-gray-700">{e.score}</p>
         <p className="font-semibold text-gray-500"> / 100</p>
       </span>
     </div>
-    ))
+    )
+  })
    
 
   return (
@@ -45,7 +50,7 @@ function App() {
           <div className="sm:max-2xl:w-1/2 sm:max-2xl:h-full rounded-e-2xl shadow-2xl p-10 flex flex-col justify-between">
             <header className="font-bold mb-3">Summary</header>
             {results}
-            <button className="text-white font-bold mt-3 rounded-3xl py-3" style={{backgroundColor: "hsl(224, 30%, 27%)"}}>Continue</button>
+            <button className="text-white font-bold mt-3 rounded-3xl py-3  hover:bg-gradient-to-b hover:from-background1 hover:to-circle1" style={{backgroundColor: "hsl(224, 30%, 27%)"}}>Continue</button>
             <div></div>
           </div>
         </div>
