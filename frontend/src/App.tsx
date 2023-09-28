@@ -1,5 +1,4 @@
-import Memory  from "./SVGs/Memory"
-import data from "../results-summary-component-main/data.json"
+import data from "../results-summary-component-main/data"
 
 
 function App() {
@@ -11,10 +10,7 @@ function App() {
   var average;
   average = sum / data.length;
   var score = Math.round(average);
-  
- 
-
-
+   
 
   return (
     <>
@@ -29,9 +25,20 @@ function App() {
             <div>{score < 50 ? "You failed! Please Try Again": "Great"}</div>
             <div>{score > 70 ? "You scored higher than 65% of the people who have taken these test": "Well done"}</div>
             </div>
-          <div className="sm:max-2xl:w-1/2 rounded-e-2xl shadow-2xl">
-            <Memory />
-            {data.map(i => i.icon)}
+          <div className="sm:max-2xl:w-1/2 rounded-e-2xl shadow-2xl p-10 flex flex-col justify-start">
+            <header>Summary</header>
+            {data.map(e => (
+            <div className="flex justify-between">
+             <div className="flex" > 
+             <e.icon key={e.category}/>
+              <span className={`flex font-bold text-${e.color}`}>{e.category}</span>
+              </div>
+              <span>{e.score}/100</span>
+              {e.color}
+            </div>
+            ))}
+            <button>Continue</button>
+            <div></div>
           </div>
         </div>
       </div>
