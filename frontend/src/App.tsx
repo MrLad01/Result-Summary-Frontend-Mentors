@@ -1,4 +1,4 @@
-import Memory  from "../results-summary-component-main/assets/images/icon-memory.svg"
+import Memory  from "./SVGs/Memory"
 import data from "../results-summary-component-main/data.json"
 
 
