@@ -1,7 +1,7 @@
-import Memory  from "../src/SVGs/Memory"
-import Reaction from "../src/SVGs/Reaction";
-import Verbal from "../src/SVGs/Verbal";
-import Visual from "../src/SVGs/Visual";
+import Memory  from "./SVGs/Memory"
+import Reaction from "./SVGs/Reaction";
+import Verbal from "./SVGs/Verbal";
+import Visual from "./SVGs/Visual";
 
 const data = [
   {
