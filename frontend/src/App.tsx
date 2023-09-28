@@ -13,13 +13,11 @@ function App() {
 
 
   const results = data.map(e => {
-    console.log(e.color); 
-    
     return (
-      <div className= {`flex justify-between bg-${e.color} bg-opacity-10 p-2 my-1 rounded-md items-center`} key={e.category}>
+      <div className= {`flex justify-between bg-${e.color} ${e.color === 'reaction' ? 'bg-reaction' : ''} ${e.color === 'memory' ? 'bg-memory' : ''} ${e.color === 'verbal' ? 'bg-verbal' : ''} ${e.color === 'visual' ? 'bg-visual' : ''}  bg-opacity-5 p-2 my-1 rounded-md items-center`} key={e.category}>
      <div className="flex items-center justify-center" > 
       <e.icon />
-      <p className={`font-semibold text-${e.color} ml-2`}>{e.category}</p>
+      <p className={`font-semibold text-${e.color} ${e.color === 'reaction' ? 'text-reaction' : ''} ${e.color === 'memory' ? 'text-memory' : ''} ${e.color === 'verbal' ? 'text-verbal' : ''} ${e.color === 'visual' ? 'text-visual' : ''} ml-2`}>{e.category}</p>
      </div>
       <span className="flex">
         <p className="font-bold mr-2 text-gray-700">{e.score}</p>

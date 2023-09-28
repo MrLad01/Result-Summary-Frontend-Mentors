@@ -3,18 +3,18 @@ export default {
   content: [
     "./index.html",
     "./src/App.tsx",
-    "./results-summary-component-main/data.ts"
+    "./src/data.ts"
   ],
   theme: {
     extend: {
       colors: {
         'background1': 'hsl(252, 100%, 67%)',
-       'background2': 'hsl(241, 84%, 54%)',
-       'circle1': 'hsla(256, 72%, 46%, 1)',
+        'background2': 'hsl(241, 84%, 54%)',
+        'circle1': 'hsla(256, 72%, 46%, 1)',
         'circle2': 'hsla(241, 72%, 46%, 0)',
         'reaction': 'hsl(0, 100%, 67%)',
         'memory': 'hsl(39, 100%, 56%)',
-        'verbal': 'hsl(166, 100%, 37%',
+        'verbal': 'hsl(166, 100%, 37%)',
         'visual': 'hsl(234, 85%, 45%)'
       },
       screens: {
