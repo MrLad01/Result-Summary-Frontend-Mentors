@@ -19,10 +19,10 @@ function App() {
       <e.icon />
       <p className={`font-semibold text-${e.color} ${e.color === 'reaction' ? 'text-reaction' : ''} ${e.color === 'memory' ? 'text-memory' : ''} ${e.color === 'verbal' ? 'text-verbal' : ''} ${e.color === 'visual' ? 'text-visual' : ''} ml-2`}>{e.category}</p>
      </div>
-      <p className="flex">
+      <div className="flex">
         <p className="font-bold mr-2 text-gray-700">{e.score}</p>
         <p className="font-semibold text-gray-500 opacity-80"> / 100</p>
-      </p>
+      </div>
     </div>
     )
   })
