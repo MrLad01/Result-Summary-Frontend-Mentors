@@ -21,7 +21,7 @@ function App() {
      </div>
       <div className="flex">
         <p className="font-bold mr-2 text-gray-700">{e.score}</p>
-        <p className="font-semibold text-gray-500 opacity-80"> / 100</p>
+        <span className="font-semibold text-gray-500 opacity-80"> / 100</span>
       </div>
     </div>
     )
