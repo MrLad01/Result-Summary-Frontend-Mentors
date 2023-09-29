@@ -48,7 +48,7 @@ function App() {
           <div className="sm:max-2xl:w-1/2 sm:max-2xl:h-full rounded-e-2xl shadow-2xl p-10 flex flex-col justify-between">
             <header className="font-bold mb-3">Summary</header>
             {results}
-            <button className="text-white font-bold mt-3 rounded-3xl py-3  hover:bg-gradient-to-b hover:from-background1 hover:to-circle1" style={{backgroundColor: "hsl(224, 30%, 27%)"}}>Continue</button>
+            <button className="text-white font-bold mt-3 rounded-3xl py-3  hover:bg-gradient-to-b focus:bg-gradient-to-b focus:from-background1 focus:to-circle1 hover:from-background1 hover:to-circle1" style={{backgroundColor: "hsl(224, 30%, 27%)"}}>Continue</button>
             <div></div>
           </div>
         </div>
