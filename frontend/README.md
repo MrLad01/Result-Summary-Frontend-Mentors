@@ -84,7 +84,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-I'll really love to develop more on the screen responsiveness. I have not gotten a hold of the middle sized screens(for tablet devices and so on) and I'm looking developing on that.
+I'll really love to develop more on the screen responsiveness. I have not gotten a hold of the middle sized screens(for tablet devices and so on) and I'm looking forward to developing on that.
 
 
 ### Useful resources
@@ -96,6 +96,7 @@ I'll really love to develop more on the screen responsiveness. I have not gotten
 
 - Frontend Mentor - [@MrLad01](https://www.frontendmentor.io/profile/MrLad01)
 - Twitter - [@MrLad01](https://www.twitter.com/MrLad01)
+- GitHub- [@MrLad01](https://github.com/MrLad01)
 
 
 

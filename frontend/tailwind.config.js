@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         'background1': 'hsl(252, 100%, 67%)',
-        'background2': 'hsl(241, 84%, 54%)',
+        'background2': 'hsl(241, 81%, 54%)',
         'circle1': 'hsla(256, 72%, 46%, 1)',
         'circle2': 'hsla(241, 72%, 46%, 0)',
         'reaction': 'hsl(0, 100%, 67%)',
